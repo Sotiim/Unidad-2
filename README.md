@@ -62,7 +62,7 @@ Implementación funcional de un sistema de **gestión de vida** y su representac
 Para abrir este proyecto, es necesario tener instalado:
 
 * **Unity Hub**
-* **Unity 3D** (Se recomienda la versión [Coloca aquí la versión que usaste, ej: 2021.3.20f1])
+* **Unity 3D** (Se recomienda la versión 2022.3.62f1)
 
 ---
 
