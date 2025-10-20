@@ -1,67 +1,69 @@
-# 📚 Proyecto de Desarrollo de Software Interactivo - UTNG
+# 🎮 Prácticas de Desarrollo de Videojuegos - UTNG
 
-## Presentación del Alumno
+## Información del Proyecto
+
 **Universidad Tecnológica del Norte de Guanajuato (UTNG)**
 
 * **Alumno:** Cesar Alberto Garcia Aranda
-* **Materia:** [Creación de Videojuegos]
-* **Carrera:** [Ingeniería en Desarrollo y Gestión de Software]
+* **Materia:** Creación de Videojuegos
+* **Carrera:** Ingeniería en Desarrollo y Gestión de Software
+* **Motor:** Unity 3D / Unity Hub
 
 ---
 
-## 🎯 Objetivo del Repositorio
+## 📋 Resumen de Prácticas
 
-Este proyecto académico compila una serie de ejercicios prácticos esenciales en el desarrollo de aplicaciones interactivas, cubriendo aspectos fundamentales como la **visualización 3D**, el diseño de **interfaces de usuario (UI)** y la implementación de sistemas de **gestión de estado (barra de vida)**.
-
----
-
-## I. 🏞️ Práctica 3D: Manipulación de Entornos
-
-Esta sección se dedica a la exploración de los principios de la **computación gráfica** y el **renderizado tridimensional** dentro del entorno de Unity. El enfoque está en construir y manipular escenas virtuales.
-
-### Aspectos Desarrollados:
-
-* **Implementación de Escena:** Configuración del *Scene* y del *Game View* en Unity.
-* **Gestión de Cámaras:** Creación de un sistema de cámara (perspectiva o tercera persona) para la navegación.
-* **Modelos y Geometría:** Uso de *GameObjects* y *Meshes* para el entorno.
-* **Iluminación Básica:** Uso de luces direccionales y *Light Probes* de Unity.
+Este repositorio contiene el código y los archivos desarrollados para tres prácticas fundamentales de la materia "Creación de Videojuegos", enfocadas en el manejo de entornos 3D, interfaces de usuario y sistemas de estado.
 
 ---
 
-## II. 🖼️ Módulo de Menú y Navegación (UI)
+## 1. 🏗️ Práctica 3D: Implementación de Assets
 
-Desarrollo de una interfaz de usuario funcional utilizando el sistema **Unity UI (uGUI)**. Se prioriza la **usabilidad** y la **claridad** de las opciones mediante *Canvases* y *Rect Transforms*.
+Esta práctica se centró en la creación de una escena tridimensional utilizando **assets propios o personalizados**. El objetivo fue entender la importación, el escalado y la colocación de modelos dentro del motor Unity.
 
-### Componentes Clave:
+### Puntos Clave:
 
-| Elemento de UI | Propósito | Estado |
-| :--- | :--- | :--- |
-| **Menú Principal** | Acceso a funcionalidades primarias (Inicio, Opciones, Créditos). | ✅ Completo |
-| **Manejo de Eventos** | Uso de *Event Triggers* y funciones de botones de Unity. | ✅ Completo |
-| **Diseño Adaptativo** | Uso de *Canvas Scaler* y *Layout Groups* para diferentes resoluciones. | ⚙️ En Revisión |
+* **Creación de Entorno:** Diseño y montaje de la escena 3D.
+* **Gestión de Assets:** Importación correcta de modelos, texturas y materiales.
+* **Cámara:** Configuración de la perspectiva visual principal.
+* **Iluminación:** Aplicación de luces para dar realismo a la escena.
 
 ---
 
-## III. ❤️ Barra de Vida (Health Management System)
+## 2. 🕹️ Práctica de Menú y Navegación
 
-Implementación del sistema de gestión de salud, un elemento de UI crítico para la retroalimentación del estado del usuario o personaje principal.
+Desarrollo de un sistema de **Menú Completo** que permite la navegación entre diferentes escenas del proyecto.
 
-### Detalles de la Implementación:
+### Componentes Implementados:
 
-1.  **Modelo de Datos:** Definición de variables públicas en C# para `currentHealth` y `maxHealth`.
-2.  **Visualización Progresiva:** Uso de un componente `Image` con la propiedad `fillAmount` para representar visualmente la vida.
-3.  **Mecanismo de Detección:** Implementación de *scripts* C# para registrar y aplicar daño (`TakeDamage()`) y curación (`Heal()`).
+| Elemento | Descripción |
+| :--- | :--- |
+| **Menú Principal** | Punto de entrada del juego (Botón Jugar, Opciones, Salir). |
+| **Transición de Escenas** | Lógica C# para cargar diferentes niveles/escenas. |
+| **Menú de Opciones** | Gestión básica de ajustes (ej. volumen, calidad gráfica). |
+| **Interfaz UI** | Uso de los componentes *Canvas* y *Buttons* de Unity. |
 
-### Fragmento de Código (C# en Unity):
+---
 
-```csharp
-// Ejemplo de cómo se actualiza la barra de vida en un script de Unity
-public void UpdateHealthBar(float currentHealth, float maxHealth)
-{
-    // Asegura que la imagen de la barra (fillImage) esté asignada
-    if (fillImage != null) 
-    {
-        // Actualiza el "lleno" de la imagen basado en el porcentaje
-        fillImage.fillAmount = currentHealth / maxHealth;
-    }
-}
+## 3. ❤️ Práctica de Barra de Vida (Health Bar)
+
+Implementación funcional de un sistema de **gestión de vida** y su representación gráfica a través de una Barra de Vida.
+
+### Detalles Técnicos:
+
+* **Lógica C#:** Scripting para manejar la salud actual y máxima.
+* **Actualización Visual:** La barra se actualiza dinámicamente utilizando el componente `Image.fillAmount` de Unity UI.
+* **Feedback Visual:** La barra de vida cambia su representación (ej. tamaño o color) al recibir daño.
+
+---
+
+## 🛠️ Requisitos del Sistema
+
+Para abrir este proyecto, es necesario tener instalado:
+
+* **Unity Hub**
+* **Unity 3D** (Se recomienda la versión [Coloca aquí la versión que usaste, ej: 2021.3.20f1])
+
+---
+
+**Cesar Alberto Garcia Aranda - UTNG**
