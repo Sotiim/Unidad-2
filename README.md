@@ -56,6 +56,23 @@ Implementación funcional de un sistema de **gestión de vida** y su representac
 * **Feedback Visual:** La barra de vida cambia su representación (ej. tamaño o color) al recibir daño.
 
 ---
+Aquí tienes los **detalles técnicos modificados** según la descripción del texto que está arriba (el del minijuego del minisúper):
+
+---
+
+## EXTRA. 🛒 Minijuego que integra las lecciones que se han estado haciendo.
+
+Minijuego el cual hace uso de las prácticas que se han tenido a lo largo de la unidad. En este caso es un minisúper en el cual debes encontrar 5 objetos generados al azar; cuenta con un menú y una barra de vida que funciona como temporizador para completar la búsqueda.
+
+### Detalles Técnicos:
+
+* **Lógica C#:** Scripting para controlar la generación aleatoria de los objetos, el conteo de ítems encontrados y el manejo del tiempo (barra de vida).
+* **Interfaz y Retroalimentación:** La barra de vida se actualiza dinámicamente con `Image.fillAmount`, representando el tiempo restante; además, puede cambiar de color conforme el tiempo se agota.
+* **Sistemas de Juego:** Se implementa un sistema de detección de objetos recogidos, un menú principal y lógica para finalizar el juego al encontrar todos los productos o al agotarse el tiempo.
+* **Optimización:** Uso de listas y funciones aleatorias (`Random.Range`) para la selección de productos y reinicio del escenario.
+
+
+---
 
 ## 🛠️ Requisitos del Sistema
 
