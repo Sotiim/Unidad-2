@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstacle
+  - Carga
   - StaticFurniture
+  - Obstacle
   layers:
   - Default
   - TransparentFX
