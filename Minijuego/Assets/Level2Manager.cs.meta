@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b30dc495c27eae9458f21d11b8eb2d9b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - conePrefab: {fileID: 2577789290920250914, guid: a3b437729d9f1db4889c3614526e9702, type: 3}
+  - coinPrefab: {fileID: 5910052485623269264, guid: f5707c1d7b1f66b429810c4d3d62e2f7, type: 3}
+  - timerText: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - endLevelPanel: {instanceID: 0}
+  - endLevelText: {instanceID: 0}
+  - backgroundMusicSource: {instanceID: 0}
+  - truckController: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
